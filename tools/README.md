@@ -19,6 +19,7 @@ Outside of general analysis, we needed to build some automation to insert driver
 We could use a GUI version of `UEFITool28` to do so, but that would be very time consuming and inconvenient.
 
 We break down the task into 4 distinct parts:
+
 0. Compile our drivers alongside the firmware image using EDKII
 1. Given a GUID of the (vulnerable) driver we built, extract it from the rest of the firmware image
 2. Find a point at which to insert the driver inside the VMware image, such that it is loaded during boot
